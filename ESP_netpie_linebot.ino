@@ -1,14 +1,14 @@
 #include <ESP8266WiFi.h>
 #include <MicroGear.h>
-#include <ESP8266HTTPClient.h>
+#incl6ude <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
-const char* ssid     = "your SSID"; //change this to your SSID
-const char* password = "your PASSWORD"; //change this to your PASSWORD
+const char* ssid     = "somsak_2.4GHz"; //change this to your SSID
+const char* password = "0862651240"; //change this to your PASSWORD
 
-const char* host = "your linebot server";//change this to your linebot server ex.http://numpapick-linebot.herokuapp.com/bot.php
-#define APPID   "your APPID"     //change this to your APPID
-#define KEY     "your KEY"     //change this to your KEY
-#define SECRET  "your SECRET"     //change this to your SECRET
+const char* host = "https://settingf.herokuapp.com/bot.php";//change this to your linebot server ex.http://numpapick-linebot.herokuapp.com/bot.php
+#define APPID   "ffff"     //change this to your APPID
+#define KEY     "OC2I9eg4sWhAeaU"     //change this to your KEY
+#define SECRET  "ooc1AqlvKxJh3Wc3SpF0qKSOK"     //change this to your SECRET
 
 #define ALIAS   "NodeMCU1" //set name of drvice
 #define TargetWeb "switch" //set target name of web
