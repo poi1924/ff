@@ -2,8 +2,8 @@
 #include <MicroGear.h>
 #incl6ude <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
-const char* ssid     = "somsak_2.4GHz"; //change this to your SSID
-const char* password = "0862651240"; //change this to your PASSWORD
+const char* ssid     = "CPH1611"; //change this to your SSID
+const char* password = "87654321"; //change this to your PASSWORD
 
 const char* host = "https://settingf.herokuapp.com/bot.php";//change this to your linebot server ex.http://numpapick-linebot.herokuapp.com/bot.php
 #define APPID   "ffff"     //change this to your APPID
@@ -70,7 +70,7 @@ void send_json(String data){
   StaticJsonBuffer<300> JSONbuffer;   //Declaring static JSON buffer
     JsonObject& JSONencoder = JSONbuffer.createObject(); 
  
-    JSONencoder["ESP"] = data;
+    JSONencoder["NodeMCU1"] = data;
  
     JsonArray& values = JSONencoder.createNestedArray("values"); //JSON array
     values.add(20); //Add value to array
