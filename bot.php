@@ -36,8 +36,4 @@ getMqttfromlineMsg($Topic,$text);
 echo "OK3";
 ?>
 			
-		}
-	}
-}
 
-?>
